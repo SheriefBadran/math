@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plot
 
-print("Hello World!!")
+print("Hello World!")
 
 # Create a figure
 figure = plot.figure()

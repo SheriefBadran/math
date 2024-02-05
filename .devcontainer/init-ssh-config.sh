@@ -1,4 +1,4 @@
-
+#! /bin/bash
 
 # Create the SSH config file with the desired content
 cat <<EOT > /home/vscode/.ssh/config
