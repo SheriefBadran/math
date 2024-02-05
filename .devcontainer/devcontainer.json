@@ -1,0 +1,28 @@
+{
+    "name": "Math",
+    "forwardPorts": [8888],
+    "build": {
+       "context": "..",
+       "dockerfile": "Dockerfile" 
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "ms-azuretools.vscode-docker",
+                "ms-toolsai.jupyter"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "postStartCommand": ["echo", "Cointainer successfully started!"],
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+    ]    
+}
