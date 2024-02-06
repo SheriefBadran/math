@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plot
 
-print("Hello World!")
-
 # Create a figure
 figure = plot.figure()
 

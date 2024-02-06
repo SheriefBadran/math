@@ -10,8 +10,5 @@ EOT
 # Ensure the config file is properly secured
 chmod 600 /home/vscode/.ssh/config
 
-# Execute the original CMD command, if applicable
-exec "$@"
-
 
 
