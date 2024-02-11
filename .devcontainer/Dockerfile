@@ -9,7 +9,7 @@ ENV NAME Math
 RUN apt-get update && apt-get install -y nodejs npm git && rm -rf /var/lib/apt/lists/*
 
 # Install any needed packages
-RUN pip install --no-cache-dir numpy scipy jupyter matplotlib invoke
+RUN pip install --no-cache-dir numpy scipy sympy jupyter matplotlib invoke
 
 # Install nodemon globally
 RUN npm install -g nodemon
